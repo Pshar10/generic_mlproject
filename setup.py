@@ -23,5 +23,5 @@ version='0.0.1',
 author='Pranav Sharma',
 author_email='pshar416@gmail.com',
 packages= find_packages(),
-install_requires = []
+install_requires = get_req('requirements.txt')
 )
