@@ -18,7 +18,7 @@ class DataTransformationConfig:
 
 class DataTransformation:
     def __init__(self):
-        self.data_transofrmation_config = DataTransformationConfig()
+        self.data_transformation_config = DataTransformationConfig()
 
     def get_data_transformer_object(self):
 
@@ -95,14 +95,14 @@ class DataTransformation:
             logging.info(f"Saving preprocessing objects")
 
             save_object(
-                file_path = self.data_transofrmation_config.preprocessor_obj_file_path,
+                file_path = self.data_transformation_config.preprocessor_obj_file_path,
                 obj = preprocessing_obj
             )
 
             return (
                 train_arr,
                 test_arr,
-                self.data_transofrmation_config.preprocessor_obj_file_path,
+                self.data_transformation_config.preprocessor_obj_file_path,
             )
 
 
